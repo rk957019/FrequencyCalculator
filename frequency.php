@@ -38,4 +38,5 @@
    echo "<td>".$value."</td>";
    echo "</tr>";
  }
+ echo "</table>"
 ?>
