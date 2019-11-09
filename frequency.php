@@ -1,8 +1,7 @@
 <?php
  $N = $_POST["number"];
- $myfile = fopen("test.txt", "r") or die("Unable to open file!");
- $arr = explode(" ",fread($myfile,filesize("test.txt")));
- fclose($myfile);
+ $myfile = file_get_contents('https://terriblytinytales.com/test.txt') or die("Unable to open file!");
+ $arr = explode(" ",$myfile);
  $cnt=0;
  sort($arr);
  for($x=0;$x<count($arr);$x++)
@@ -39,5 +38,4 @@
    echo "<td>".$value."</td>";
    echo "</tr>";
  }
-
 ?>
