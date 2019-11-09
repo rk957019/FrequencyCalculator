@@ -1,6 +1,6 @@
 <?php
  $N = $_POST["number"];
- $myfile = file_get_contents('https://terriblytinytales.com/test.txt') or die("Unable to open file!");
+ $myfile = file_get_contents('https://terriblytinytales.com/test.txt') or die("Unable to fetch data!");
  $arr = explode(" ",$myfile);
  $cnt=0;
  sort($arr);
